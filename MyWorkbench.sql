@@ -1,0 +1,23 @@
+show databases;
+use library_db;
+SELECT user, host, plugin FROM mysql.user;
+ALTER USER 'NamuJagtap'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Namu@8955';
+FLUSH PRIVILEGES;
+SHOW TABLES;
+select * from library_book;
+select * from django_admin_log;
+select * from auth_group;
+select * from auth_group_permissions;
+select * from auth_permission;
+select * from auth_user;
+select * from auth_user_groups;
+select * from auth_user_user_permissions;
+select * from django_admin_log;
+select * from django_content_type;
+select * from django_migrations;
+select * from django_session;
+select * from library_admin;
+select * from library_book;
+select * from library_student;
+select * from library_student_books;
+
